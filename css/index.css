@@ -41,10 +41,6 @@ textarea {
     height: 200px;
 }
 
-#results {
-    margin-top: 12px;
-}
-
 ::-webkit-input-placeholder {
     text-align: center;
  }

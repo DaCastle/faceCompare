@@ -8,40 +8,46 @@
     <meta name="description" content="Face Compare">
     <meta name="author" content="Dakota Castleberg">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
     <link rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"> 
+      crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css">
 
   </head>
 
   <body>
 
-    <div id="wrapper" class="row offset-sm-3 col-sm-6">
+    <div id="wrapper" class="container-fluid">
+      <div class="row">
 
-      <div id="image1Container" class="col-sm-6">
-        <h3>First Image</h3>
-        <img id="img1" src="https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/11120512_10206183272439197_4134059824139329785_n.jpg?_nc_cat=0&oh=0f4326fbb32fc1d14d9e944803cd4c4d&oe=5BFAF272" />
-        <input id="img1url" type="url" class="col-sm-12" placeholder="Paste a link to the image here">
-        <textarea id="person1Data" class="col-sm-12"></textarea>
-      </div>
+        <div id="image1Container" class="col-lg-6">
+          <h3>First Image</h3>
+          <img id="img1"
+            src="https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/11120512_10206183272439197_4134059824139329785_n.jpg?_nc_cat=0&oh=0f4326fbb32fc1d14d9e944803cd4c4d&oe=5BFAF272"
+            />
+          <input id="img1url" type="url" class="col-12" placeholder="Paste a link to the image here">
+          <textarea id="person1Data" class="col-12"></textarea>
+        </div>
 
-      <div id="image2Container" class="col-sm-6">
+        <div id="image2Container" class="col-lg-6">
           <h3>Second Image</h3>
-          <img id="img2" src="https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/12801671_1108721312492141_6811048539584700811_n.jpg?_nc_cat=0&oh=cda1ccefcd4b8082cbaef492d2396bd8&oe=5C021E06" />
-          <input id="img2url" type="url" class="col-sm-12" placeholder="Paste a link to the image here">
-              <textarea id="person2Data" class="col-sm-12"></textarea>
-      </div>
+          <img id="img2"
+            src="https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/12801671_1108721312492141_6811048539584700811_n.jpg?_nc_cat=0&oh=cda1ccefcd4b8082cbaef492d2396bd8&oe=5C021E06"
+            />
+          <input id="img2url" type="url" class="col-12" placeholder="Paste a link to the image here">
+          <textarea id="person2Data" class="col-12"></textarea>
+        </div>
 
-      <button id="compare" type="button" onclick="verify()" class="col-sm-6">Compare!</button>
-
-      <div class="col-sm-6">
+        <button id="compare" type="button" onclick="verify()" class="col-6">Compare!</button>
+        <div class="col-6">
           <h5 id="results"></h5>
+        </div>
+
       </div>
-      
+
     </div>
 
     <div class="loading">Loading&#8230;</div>

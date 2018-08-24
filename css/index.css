@@ -1,7 +1,6 @@
 #wrapper {
     background-color: black;
     color: white;
-    margin-top: 10px;
     text-align: center;
     border-radius: 10px;
 }
@@ -29,6 +28,9 @@
     opacity: .8;
 }
 
+body {
+    background-color: black;
+}
 h3 {
     padding-top: 5px;
 }

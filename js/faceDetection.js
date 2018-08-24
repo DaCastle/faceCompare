@@ -73,6 +73,7 @@ function processImage(imageSrc, person) {
 
 function verify() {
 
+    $('.loading').toggle();
     var uriBase = "https://eastus.api.cognitive.microsoft.com/face/v1.0/verify";
 
     // Perform the REST API call.
@@ -99,6 +100,7 @@ function verify() {
             else {
                 $("#results").text('Not the same person!');
             }
+            $('.loading').toggle();
         })
 
         .fail(function (jqXHR, textStatus, errorThrown) {
@@ -110,6 +112,7 @@ function verify() {
                     jQuery.parseJSON(jqXHR.responseText).message :
                     jQuery.parseJSON(jqXHR.responseText).error.message;
             alert(errorString);
+            $('.loading').toggle();
         });
 };
 

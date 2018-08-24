@@ -1,0 +1,59 @@
+#wrapper {
+    background-color: black;
+    color: white;
+    margin-top: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#image1Container, #image2Container {
+    height: 620px;
+}
+
+#img1, #img2 {
+    height: 300px;
+    width: auto;
+    margin: 10px;
+    max-width: 100%;
+}
+
+#img1url, #img2url {
+    border-radius: 20px;
+}
+
+#compare {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#compare:hover {
+    opacity: .8;
+}
+
+h3 {
+    padding-top: 5px;
+}
+
+textarea { 
+    margin-top: 20px;
+    height: 200px;
+}
+
+#results {
+    margin-top: 12px;
+}
+
+::-webkit-input-placeholder {
+    text-align: center;
+ }
+ 
+ :-moz-placeholder { /* Firefox 18- */
+    text-align: center;  
+ }
+ 
+ ::-moz-placeholder {  /* Firefox 19+ */
+    text-align: center;  
+ }
+ 
+ :-ms-input-placeholder {  
+    text-align: center; 
+ }
